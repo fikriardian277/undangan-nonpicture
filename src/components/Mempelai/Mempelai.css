@@ -1,0 +1,112 @@
+/* src/components/Mempelai/Mempelai.css */
+
+.mempelai-section {
+  padding: 4rem 1rem;
+  position: relative; /* Penting untuk FlowerDecorator */
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+}
+
+.mempelai-section .container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.salam-pembuka {
+  margin-bottom: 4rem;
+}
+
+.mempelai-photo-frame {
+  width: 200px;
+  height: 350px;
+  background-color: var(--color-light);
+  border: 3px solid var(--color-primary);
+  border-radius: 9999px;
+  overflow: hidden;
+  margin: 0 auto 1.5rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- PERBAIKI ATURAN UNTUK GAMBAR DI DALAMNYA DI SINI --- */
+.mempelai-photo {
+  width: 100%; /* Gambar mengisi lebar frame */
+  height: 100%; /* Gambar mengisi tinggi frame */
+  object-fit: contain; /* Ini kuncinya! */
+}
+
+.mempelai-name {
+  font-family: var(--font-title);
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.mempelai-parents {
+  font-size: 0.95rem;
+  color: var(--color-dark-text);
+  margin-bottom: 1rem;
+}
+
+.instagram-link {
+  color: var(--color-primary);
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  display: inline-block; /* Agar bisa di-transform */
+}
+.instagram-link:hover {
+  transform: translateY(-3px);
+}
+
+.and-symbol {
+  font-family: var(
+    --font-title
+  ); /* Gunakan font yang sama dengan nama mempelai */
+  font-size: 3.5rem;
+  color: var(--color-secondary); /* Warna yang lebih lembut */
+  margin: 2rem 0;
+}
+
+/* ============================================================
+   PENYESUAIAN UNTUK FLOWER DECORATOR DI SECTION MEMPELAI
+   Agar bunga-bunga ini lebih kecil dan dekat ke ilustrasi
+============================================================ */
+
+/* Untuk FlowerDecorator di sudut kiri atas */
+.mempelai-section .decorator-container.top-left {
+  top: 60%; /* Sesuaikan posisi relatif terhadap section */
+  left: -80px; /* Geser ke kiri */
+  width: 250px; /* Ukuran container bunga */
+  height: 250px;
+  rotate: 90deg; /* Sedikit miring */
+  z-index: 1; /* Di bawah ilustrasi */
+}
+
+.mempelai-section .top-left .flower-part {
+  /* Atur ukuran dan posisi bunga tunggal di sini */
+  width: 250px;
+  top: 80px;
+  left: 50px;
+  transform: rotate(20deg);
+}
+
+/* Untuk FlowerDecorator di sudut kanan atas */
+.mempelai-section .decorator-container.top-right {
+  top: 10%; /* Sesuaikan posisi relatif terhadap section */
+  right: -80px; /* Geser ke kanan */
+  width: 200px; /* Ukuran container bunga */
+  height: 200px;
+  z-index: 1; /* Di bawah ilustrasi */
+}
+
+.mempelai-section .top-right .flower-part {
+  /* Atur ukuran dan posisi bunga tunggal di sini */
+  width: 250px;
+  top: 50px;
+  right: 20px;
+  rotate: 25deg;
+  transform: rotate(-180deg);
+}

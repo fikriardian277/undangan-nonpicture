@@ -1,0 +1,108 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap");
+
+/* CSS Variables (Palet Warna & Font) */
+:root {
+  --font-title: "Great Vibes", cursive;
+  --font-body: "Poppins", sans-serif;
+  --color-primary: #0a2647; /* Biru Navy */
+  --color-secondary: #144272;
+  --color-light: #f1f6f9;
+  --color-dark-text: #333;
+  --color-light-text: #ffffff;
+}
+
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-light); /* <-- ini aja cukup */
+  color: var(--color-dark-text);
+  text-align: center;
+  /* background-color: #e9e9e9; <-- hapus aja */
+}
+.app-wrapper {
+  max-width: 450px; /* Lebar maksimal aplikasi kita, seperti HP */
+  margin: 0 auto; /* Ini trik untuk membuatnya otomatis ke tengah */
+
+  /* Efek bayangan agar terlihat seperti 'mengambang' di desktop */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.app-wrapper {
+  /* Secara default, kunci tinggi layar & sembunyikan scrollbar */
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("./assets/img/texture-bg.png");
+  /* background-attachment: fixed; */
+  background-repeat: repeat;
+}
+.app-wrapper.opened {
+  /* Setelah dibuka, kembalikan tinggi normal & munculkan scrollbar */
+  height: auto;
+  overflow: visible;
+}
+
+.main-content {
+  /* Secara default, sembunyikan konten utama */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out 0.5s, transform 1s ease-out 0.5s;
+  /* background-image: url("./assets/img/texture-bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed; 
+  background-position: center; */
+}
+
+.app-wrapper.opened .main-content {
+  /* Setelah dibuka, tampilkan konten utama */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======================================================= */
+/* FIX UNTUK ANIMASI AOS YANG "LONCAT" / "FLICKER"         */
+/* ======================================================= */
+
+/* Sembunyikan elemen sebelum AOS siap */
+[data-aos] {
+  opacity: 0;
+}
+
+/* Beri posisi awal untuk setiap tipe animasi */
+[data-aos="fade-up"] {
+  transform: translate3d(0, 50px, 0);
+}
+[data-aos="fade-left"] {
+  transform: translate3d(50px, 0, 0); /* <-- INI YANG KURANG */
+}
+[data-aos="fade-right"] {
+  transform: translate3d(-50px, 0, 0); /* <-- INI YANG KURANG */
+}
+[data-aos="zoom-in"] {
+  transform: scale(0.8); /* <-- Tambahan untuk zoom */
+}

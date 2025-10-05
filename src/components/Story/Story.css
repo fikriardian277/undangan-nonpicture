@@ -1,0 +1,57 @@
+/* src/components/Story/Story.css */
+
+.story-section {
+  padding: 4rem 1rem;
+  .story-section {
+    padding: 4rem 1rem;
+    background-color: transparent; /* <-- Jadi transparan */
+  }
+}
+
+.story-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.story-section .section-title {
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  color: var(--color-primary);
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.story-content {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.story-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 2rem;
+}
+
+.story-text {
+  padding: 2rem;
+}
+
+.story-text h3 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.story-text p {
+  text-align: justify;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 0;
+}

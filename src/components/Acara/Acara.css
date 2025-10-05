@@ -1,0 +1,96 @@
+.acara-section {
+  background-color: transparent;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* WAVE ATAS */
+.wave-top {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  transform: scaleY(-1);
+}
+.wave-top svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+/* HEADER KONTEN */
+.acara-header {
+  background-color: var(--color-primary);
+  color: var(--color-light-text);
+  text-align: center;
+  padding: 4rem 1rem 4rem 1rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -50px;
+
+  /* 2. Tambah padding atas agar teks tidak ikut ketarik & tertutup gelombang */
+  padding-top: 140px;
+}
+.acara-header .section-title {
+  font-family: var(--font-title);
+  font-size: 3.2rem;
+  margin-bottom: 1rem;
+}
+.acara-header .ayat {
+  color: #ccc;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* KONTEN KARTU */
+.acara-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+.card {
+  background-color: #ffffff;
+  color: var(--color-dark-text);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.card h3 {
+  font-family: var(--font-title);
+  font-size: 2.4rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+.card .tanggal {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.card .waktu {
+  margin-bottom: 1rem;
+}
+.card .alamat {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+.location-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.8rem;
+  border-radius: 50px;
+  background-color: var(--color-secondary);
+  color: var(--color-light-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.location-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

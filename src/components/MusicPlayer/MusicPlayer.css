@@ -1,0 +1,38 @@
+/* src/components/MusicPlayer/MusicPlayer.css */
+
+.music-toggle-btn {
+  position: fixed; /* TETAP FIXED */
+  bottom: 2rem;
+
+  /* Posisi default untuk tampilan mobile */
+  left: 2rem;
+
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.4s ease;
+}
+
+.music-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ======================================================= */
+/* TRIK UNTUK TAMPILAN DESKTOP (Layar lebih lebar dari 480px) */
+/* ======================================================= */
+@media (min-width: 480px) {
+  .music-toggle-btn {
+    /* Hitung posisi kiri: (lebar layar - lebar frame) / 2 + jarak ke dalam */
+    left: calc((100vw - 450px) / 2 + 2rem);
+  }
+}

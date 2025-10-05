@@ -1,0 +1,76 @@
+/* src/components/Countdown/Countdown.css */
+
+.countdown-section {
+  padding: 6rem 1rem;
+  position: relative; /* Penting agar FlowerDecorator bisa diposisikan */
+  overflow: hidden; /* Mencegah hiasan keluar dari section */
+  background-color: transparent;
+}
+
+.countdown-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.countdown-section h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--color-primary);
+}
+
+/* STYLE BARU UNTUK ILUSTRASI PASANGAN */
+.couple-illustration-countdown {
+  position: relative; /* Wajib ada agar z-index berfungsi */
+  z-index: 10; /* Angka lebih tinggi = lebih di atas */
+  margin: 2rem auto;
+  width: 100%;
+  max-width: 300px;
+}
+.couple-illustration-countdown img {
+  width: 100%;
+  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.1));
+}
+
+.countdown-section h2 {
+  font-family: var(--font-title);
+  font-size: 4rem;
+  color: var(--color-primary);
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.timer-box {
+  background-color: var(--color-primary); /* Warna latar biru navy */
+  color: var(--color-light-text); /* Warna teks putih */
+  padding: 0.5rem;
+  border-radius: 10px;
+  min-width: 80px; /* Lebar minimum kotak */
+  text-align: center;
+}
+
+.timer-box span {
+  display: block;
+  font-size: 2.5rem; /* Ukuran angka */
+  font-weight: 600; /* Ketebalan angka */
+  line-height: 1;
+}
+
+.timer-box p {
+  font-size: 0.9rem; /* Ukuran tulisan "Hari", "Jam", dll. */
+  margin: 0.5rem 0 0 0; /* Jarak dari angka di atasnya */
+  padding: 0;
+}
+
+.wedding-date {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}

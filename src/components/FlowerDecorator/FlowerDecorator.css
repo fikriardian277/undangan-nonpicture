@@ -1,0 +1,197 @@
+/*
+============================================================
+FILE: FlowerDecorator.css (VERSI FLEKSIBEL PER SUDUT)
+FUNGSI: Mengatur gaya hiasan bunga secara terpisah untuk setiap sudut.
+============================================================
+*/
+
+.decorator-container {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.flower-part {
+  position: absolute;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.2));
+}
+
+/* ============================================================
+ATURAN UNTUK SUDUT KIRI ATAS (.top-left)
+============================================================
+*/
+.decorator-container.top-left {
+  top: -40px;
+  left: 200px;
+}
+
+.top-left .part-1 {
+  width: 180px;
+  top: 15px;
+  left: 120px;
+  transform: rotate(-15deg);
+  animation: fadeInDown 1.2s ease-out 0.5s forwards,
+    idleFloat 5s ease-in-out 1.7s infinite;
+  z-index: 2;
+}
+.top-left .part-2 {
+  width: 200px;
+  top: 50px;
+  right: -20px;
+  transform: rotate(5deg);
+  animation: fadeInDown 1.2s ease-out 0.7s forwards,
+    idleFloat 5s ease-in-out 1.9s infinite;
+}
+.top-left .part-3 {
+  width: 150px;
+  top: 20px;
+  right: 60px;
+  rotate: 50deg;
+  transform: rotate(25deg);
+  animation: fadeInDown 1.2s ease-out 0.9s forwards,
+    idleFloat 5s ease-in-out 2.1s infinite;
+}
+
+/* ============================================================
+ATURAN UNTUK SUDUT KANAN ATAS (.top-right)
+Copy-paste dari .top-left lalu sesuaikan nilainya di sini.
+============================================================
+*/
+.decorator-container.top-right {
+  top: -40px;
+  right: -10px;
+}
+
+/* --- ATUR BUNGA PERTAMA DI SINI --- */
+.top-right .part-1 {
+  width: 250px; /* Lebar bunga pertama */
+  top: 20px; /* Jarak dari atas */
+  right: 340px; /* Jarak dari kanan */
+  transform: rotate(60deg); /* Rotasi */
+  z-index: 2; /* Tumpukan di atas */
+  animation: fadeInDown 1.2s ease-out 0.5s forwards,
+    idleFloat 5s ease-in-out 1.7s infinite;
+}
+
+/* --- ATUR BUNGA KEDUA DI SINI --- */
+.top-right .part-2 {
+  width: 250px; /* Lebar bunga kedua */
+  top: -10px; /* Jarak dari atas */
+  right: 300px; /* Jarak dari kanan */
+  transform: rotate(-10deg); /* Rotasi */
+  z-index: 1; /* Tumpukan di bawah part-1 */
+  animation: fadeInDown 1.2s ease-out 0.7s forwards,
+    idleFloat 5s ease-in-out 1.9s infinite;
+}
+
+/* ============================================================
+ATURAN BARU UNTUK SUDUT KIRI BAWAH (.bottom-left)
+============================================================
+*/
+.decorator-container.bottom-left {
+  bottom: 470px;
+  left: 50px;
+}
+
+/* Atur komposisi bunga part-1 untuk sudut ini */
+.bottom-left .part-1 {
+  width: 180px;
+  bottom: 30px;
+  left: 180px;
+  transform: rotate(25deg);
+  animation: fadeInDown 1.2s ease-out 0.5s forwards,
+    idleFloat 6s ease-in-out 1.7s infinite;
+}
+
+/* Atur komposisi bunga part-2 untuk sudut ini */
+.bottom-left .part-2 {
+  width: 100px;
+  bottom: 20px;
+  left: 200px;
+  transform: rotate(-15deg);
+  animation: fadeInDown 1.2s ease-out 0.7s forwards, idleFloat 6s ease-in-out;
+}
+
+/* ============================================================
+ATURAN BARU KHUSUS UNTUK SUDUT BAWAH DI SECTION ACARA
+============================================================
+*/
+
+/* --- ATUR POSISI KANVAS KHUSUS ACARA --- */
+.acara-style.bottom-left {
+  bottom: -50px;
+  left: -60px;
+}
+
+/* --- ATUR KOMPOSISI BUNGA KHUSUS ACARA --- */
+.acara-style.bottom-left .part-1 {
+  width: 250px;
+  bottom: 10px;
+  left: 20px;
+  transform: rotate(15deg);
+}
+.acara-style.bottom-left .part-2 {
+  width: 150px;
+  bottom: -20px;
+  left: 50px;
+  transform: rotate(-25deg);
+}
+
+/* ============================================================
+ATURAN BARU KHUSUS UNTUK SUDUT BAWAH DI SECTION PENUTUP
+============================================================
+*/
+
+/* --- ATUR POSISI KANVAS KHUSUS PENUTUP --- */
+.penutup-style.bottom-left {
+  bottom: 320px; /* Sesuaikan sesuai kebutuhan */
+  left: -50px; /* Sesuaikan sesuai kebutuhan */
+}
+
+/* --- ATUR KOMPOSISI BUNGA KHUSUS PENUTUP --- */
+.penutup-style.bottom-left .part-1 {
+  width: 200px;
+  bottom: 10px;
+  left: 80px;
+  transform: rotate(20deg);
+  animation: fadeInDown 1.2s ease-out 0.5s forwards,
+    idleFloat 5s ease-in-out 1.7s infinite;
+}
+.penutup-style.bottom-left .part-2 {
+  width: 100px;
+  bottom: 10px;
+  left: 120px;
+  transform: rotate(-10deg);
+  animation: fadeInDown 1.2s ease-out 0.5s forwards,
+    idleFloat 5s ease-in-out 1.7s infinite;
+}
+
+/* ============================================================
+DEFINISI ANIMASI (Bisa dipakai bersama atau buat yang baru)
+============================================================
+*/
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes idleFloat {
+  0% {
+    transform: translateY(0) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-5deg);
+  }
+}
