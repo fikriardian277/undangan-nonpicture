@@ -63,7 +63,7 @@ Copy-paste dari .top-left lalu sesuaikan nilainya di sini.
 */
 .decorator-container.top-right {
   top: -40px;
-  right: -10px;
+  right: -80px;
 }
 
 /* --- ATUR BUNGA PERTAMA DI SINI --- */
@@ -148,7 +148,7 @@ ATURAN BARU KHUSUS UNTUK SUDUT BAWAH DI SECTION PENUTUP
 
 /* --- ATUR POSISI KANVAS KHUSUS PENUTUP --- */
 .penutup-style.bottom-left {
-  bottom: 320px; /* Sesuaikan sesuai kebutuhan */
+  bottom: 350px; /* Sesuaikan sesuai kebutuhan */
   left: -50px; /* Sesuaikan sesuai kebutuhan */
 }
 

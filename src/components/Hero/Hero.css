@@ -51,8 +51,8 @@
   position: relative;
   text-align: center;
   z-index: 4;
-  /* Beri sedikit margin untuk memastikan tidak terlalu mepet ke bawah */
-  margin-bottom: 2vh;
+
+  margin-bottom: 10vh;
 }
 .hero-content h4 {
   font-family: var(--font-body);
