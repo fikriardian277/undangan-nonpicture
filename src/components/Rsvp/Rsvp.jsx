@@ -20,11 +20,16 @@ function Rsvp() {
     fetch(scriptURL)
       .then((res) => res.json())
       .then((data) => {
-        setComments(data);
+        // --- FIX ERROR MAP: CEK APAKAH DATA ADALAH ARRAY ---
+        const safeData = Array.isArray(data) ? data : [];
+        setComments(safeData);
+        // --------------------------------------------------
         setIsLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching comments!", error.message);
+        // Jika error, set comments menjadi array kosong agar rendering tidak crash
+        setComments([]);
         setIsLoading(false);
       });
   };
