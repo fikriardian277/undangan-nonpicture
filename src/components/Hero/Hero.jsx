@@ -21,8 +21,8 @@ const topLeftFlowers = [bungaTL1, bungaTL2, bungaTL3, bungaTL4];
 const topRightFlowers = [bungaTR1, bungaTR2];
 
 function Hero({ onOpen, isOpened }) {
-  const queryParams = new URLSearchParams(window.location.search);
-  const guestName = queryParams.get("to")?.replace(/\+/g, " ") || "Nama Tamu";
+  // const queryParams = new URLSearchParams(window.location.search);
+  // const guestName = queryParams.get("to")?.replace(/\+/g, " ") || "Nama Tamu";
 
   return (
     <header className={`hero ${isOpened ? "opened" : ""}`}>
@@ -49,9 +49,9 @@ function Hero({ onOpen, isOpened }) {
         <p data-aos="fade-up" data-aos-delay="900">
           Kepada Bapak/Ibu/Saudara/i
         </p>
-        <p className="guest-name" data-aos="fade-up" data-aos-delay="1100">
+        {/* <p className="guest-name" data-aos="fade-up" data-aos-delay="1100">
           {guestName}
-        </p>
+        </p> */}
         <button
           className="btn"
           data-aos="fade-up"
