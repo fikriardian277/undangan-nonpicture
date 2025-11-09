@@ -46,7 +46,7 @@ function Countdown() {
 
   const generateGoogleCalendarLink = () => {
     const event = {
-      title: "Pernikahan Habib & Adiba",
+      title: "Pernikahan Aang & Tuti",
       // PENTING: Ganti tanggal & waktu ini sesuai acaramu
       // Format: YYYYMMDDTHHMMSS (Waktu lokal, tanpa Z)
       startDate: "20251221T080000", // Contoh: 22 November 2025, Jam 10:00
