@@ -5,7 +5,7 @@ import "./Penutup.css";
 import FlowerDecorator from "../FlowerDecorator/FlowerDecorator"; // PENTING
 
 // Import ilustrasi yang sama dengan di Countdown
-import coupleIllustration from "../../assets/img/couple-countdown.png";
+import coupleIllustration from "../../assets/img/couple-countdown.svg";
 
 // Import aset bunga yang mau kamu pakai untuk sudut bawah
 // Boleh pakai aset yang sama atau yang baru
@@ -35,7 +35,7 @@ function Penutup() {
         </h3>
 
         <h2 className="penutup-names" data-aos="fade-up" data-aos-delay="400">
-          Habib & Adiba
+          Aang & Tuti
         </h2>
       </div>
 

@@ -4,7 +4,7 @@ import FlowerDecorator from "../FlowerDecorator/FlowerDecorator";
 
 // --- ASET GAMBAR ---
 // Ilustrasi Pasangan
-import coupleIllustration from "../../assets/img/couple-illustration.png";
+import coupleIllustration from "../../assets/img/couple-illustration.svg";
 
 // Aset Bunga Sudut Kiri Atas
 import bungaTL1 from "../../assets/img/bunga-tl-1.png";
@@ -44,7 +44,7 @@ function Hero({ onOpen, isOpened }) {
           The Wedding of
         </h4>
         <h1 data-aos="fade-up" data-aos-delay="700">
-          Habib & Adiba
+          Aang & Tuti
         </h1>
         <p data-aos="fade-up" data-aos-delay="900">
           Kepada Bapak/Ibu/Saudara/i

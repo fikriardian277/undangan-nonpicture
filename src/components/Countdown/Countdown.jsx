@@ -6,7 +6,7 @@ import FlowerDecorator from "../FlowerDecorator/FlowerDecorator"; // PENTING
 
 // --- ASET GAMBAR ---
 // Import ilustrasi untuk section ini
-import coupleIllustration from "../../assets/img/couple-countdown.png";
+import coupleIllustration from "../../assets/img/couple-countdown.svg";
 
 // Import bunga untuk hiasan sudut (PAKAI ASET YANG SAMA DARI HERO)
 import bungaTL1 from "../../assets/img/bunga-tl-1.png";
@@ -22,7 +22,7 @@ const bottomLeftFlowers = [bungaBL1, bungaBL2, bungaBL3];
 
 function Countdown() {
   const calculateTimeLeft = () => {
-    const difference = +new Date("2025-11-22T00:00:00") - +new Date();
+    const difference = +new Date("2025-12-21T08:00:00") - +new Date();
     let timeLeft = {};
     if (difference > 0) {
       timeLeft = {
@@ -49,10 +49,11 @@ function Countdown() {
       title: "Pernikahan Habib & Adiba",
       // PENTING: Ganti tanggal & waktu ini sesuai acaramu
       // Format: YYYYMMDDTHHMMSS (Waktu lokal, tanpa Z)
-      startDate: "20251122T100000", // Contoh: 22 November 2025, Jam 10:00
-      endDate: "20251122T140000", // Contoh: 22 November 2025, Jam 14:00 (Selesai)
-      location: "Jl. Sugeng Jeroni No.48b, Yogyakarta",
-      details: "Acara Pernikahan Habib & Adiba. Mohon doa restu.",
+      startDate: "20251221T080000", // Contoh: 22 November 2025, Jam 10:00
+      endDate: "20251221T150000", // Contoh: 22 November 2025, Jam 14:00 (Selesai)
+      location:
+        "Kediaman mempelai wanita kp. Ciakar RT 01 RW 05 Desa Leuwidulang, Kec. Sodonghilir, Kab. Tasikmalaya, Jawa Barat",
+      details: "Acara Pernikahan Aang & Tuti. Mohon doa restu.",
       timezone: "Asia/Jakarta", // Atur zona waktu
     };
 
@@ -80,7 +81,7 @@ function Countdown() {
           <img src={coupleIllustration} alt="Habib & Adiba Illustration" />
         </div>
 
-        <h2>Habib & Adiba</h2>
+        <h2>Aang & Tuti</h2>
         <p>Kami berharap Anda menjadi bagian dari hari istimewa kami.</p>
 
         <div className="countdown-timer">
@@ -102,7 +103,7 @@ function Countdown() {
           </div>
         </div>
 
-        <p className="wedding-date">Sabtu, 22 November 2025</p>
+        <p className="wedding-date">Minggu, 21 Desember 2025</p>
         <a
           href={generateGoogleCalendarLink()} // Panggil fungsi di sini
           target="_blank" // Buka di tab baru

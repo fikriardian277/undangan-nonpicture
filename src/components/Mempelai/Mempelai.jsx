@@ -6,8 +6,8 @@ import FlowerDecorator from "../FlowerDecorator/FlowerDecorator"; // 1. Import F
 
 // --- ASET GAMBAR ---
 // 2. Import ilustrasi mempelai pria dan wanita
-import groomIllustration from "../../assets/img/groom-illustration.png";
-import brideIllustration from "../../assets/img/bride-illustration.png";
+import groomIllustration from "../../assets/img/groom-illustration.svg";
+import brideIllustration from "../../assets/img/bride-illustration.svg";
 
 // 3. Import aset bunga (hanya bunga-tl-1.png seperti permintaan)
 import bungaTL1 from "../../assets/img/bunga-tl-1.png";
@@ -45,9 +45,9 @@ function Mempelai() {
               className="mempelai-photo"
             />
           </div>
-          <h3 className="mempelai-name">Habib Yulianto</h3>
+          <h3 className="mempelai-name">Aang Supriatna</h3>
           <p className="mempelai-parents">
-            Putra dari Bapak Arifin (Alm.) & Kholifah
+            Putra ke satu dari Bapak Sutisna & Ibu Dese
           </p>
           <a
             href="https://instagram.com/habib.yulianto"
@@ -77,9 +77,9 @@ function Mempelai() {
               className="mempelai-photo"
             />
           </div>
-          <h3 className="mempelai-name">Adiba Salsabila</h3>
+          <h3 className="mempelai-name">Tuti Alawiyah</h3>
           <p className="mempelai-parents">
-            Putri dari Bapak Setiawan & Ibu Rina
+            Putri dari Bapak Hadin & Ibu Haryani
           </p>
           <a
             href="https://instagram.com/adiba.salsabila"

@@ -4,7 +4,7 @@ import React from "react";
 import "./Story.css";
 
 // 1. IMPORT ILUSTRASI YANG SAMA DENGAN DI COUNTDOWN
-import coupleIllustration from "../../assets/img/couple-countdown.png";
+import coupleIllustration from "../../assets/img/couple-countdown.svg";
 
 function Story() {
   return (

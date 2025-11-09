@@ -12,7 +12,7 @@ import Mempelai from "./components/Mempelai/Mempelai.jsx";
 import Countdown from "./components/Countdown/Countdown.jsx";
 import Acara from "./components/Acara/Acara.jsx";
 import Gift from "./components/Gift/Gift.jsx";
-import Story from "./components/Story/Story.jsx";
+// import Story from "./components/Story/Story.jsx";
 import Rsvp from "./components/Rsvp/Rsvp.jsx";
 import Penutup from "./components/Penutup/Penutup.jsx";
 import "./index.css";
@@ -58,7 +58,7 @@ function App() {
         <Mempelai />
         <Acara />
         <Gift />
-        <Story />
+        {/* <Story /> */}
         <Rsvp />
         <Penutup />
         <Footer />
