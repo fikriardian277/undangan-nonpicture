@@ -41,14 +41,14 @@ function Gift() {
           <div className={`gift-details ${isVisible ? "visible" : ""}`}>
             {/* Kartu BCA */}
             <div className="gift-card">
-              <h4>BCA</h4>
-              <p className="account-number">1234567890</p>
-              <p className="account-name">a/n Adiba</p>
+              <h4>BRI</h4>
+              <p className="account-number">438001057602538</p>
+              <p className="account-name">a/n Tuti Alawiyah</p>
               <button
                 className="copy-btn"
-                onClick={() => handleCopy("1234567890", "bca")}
+                onClick={() => handleCopy("438001057602538", "bri")}
               >
-                {copied === "bca" ? (
+                {copied === "bri" ? (
                   <>
                     <FaCheck /> Disalin
                   </>
@@ -63,11 +63,11 @@ function Gift() {
             {/* Kartu DANA */}
             <div className="gift-card">
               <h4>DANA</h4>
-              <p className="account-number">081234567890</p>
-              <p className="account-name">a/n Habib</p>
+              <p className="account-number">085211509885</p>
+              <p className="account-name">a/n Aang supriatna</p>
               <button
                 className="copy-btn"
-                onClick={() => handleCopy("081234567890", "dana")}
+                onClick={() => handleCopy("085211509885", "dana")}
               >
                 {copied === "dana" ? (
                   <>
@@ -82,7 +82,7 @@ function Gift() {
             </div>
 
             {/* Kartu Kirim Hadiah */}
-            <div className="gift-card address-card">
+            {/* <div className="gift-card address-card">
               <h4>Kirim Hadiah</h4>
               <p className="address-details">
                 <strong>Penerima:</strong> Habib Yulianto
@@ -91,7 +91,7 @@ function Gift() {
                 <br />
                 <strong>Alamat:</strong> Jl. Sugeng Jeroni No.48A, Yogyakarta
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

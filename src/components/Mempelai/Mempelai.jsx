@@ -49,14 +49,14 @@ function Mempelai() {
           <p className="mempelai-parents">
             Putra ke satu dari Bapak Sutisna & Ibu Dese
           </p>
-          <a
+          {/* <a
             href="https://instagram.com/habib.yulianto"
             target="_blank"
             rel="noopener noreferrer"
             className="instagram-link"
           >
             <i className="fab fa-instagram"></i>
-          </a>
+          </a> */}
         </div>
 
         {/* Simbol "&" (Animasi Fade In) */}
@@ -81,14 +81,14 @@ function Mempelai() {
           <p className="mempelai-parents">
             Putri dari Bapak Hadin & Ibu Haryani
           </p>
-          <a
+          {/* <a
             href="https://instagram.com/adiba.salsabila"
             target="_blank"
             rel="noopener noreferrer"
             className="instagram-link"
           >
             <i className="fab fa-instagram"></i>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>
