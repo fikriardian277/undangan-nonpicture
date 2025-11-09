@@ -79,7 +79,7 @@ function Mempelai() {
           </div>
           <h3 className="mempelai-name">Tuti Alawiyah</h3>
           <p className="mempelai-parents">
-            Putri dari Bapak Hadin & Ibu Haryani
+            Putri kedua dari Bapak Hadin & Ibu Haryani
           </p>
           {/* <a
             href="https://instagram.com/adiba.salsabila"
