@@ -47,7 +47,7 @@ function Hero({ onOpen, isOpened }) {
           Aang & Tuti
         </h1>
         <p data-aos="fade-up" data-aos-delay="900">
-          Kepada Bapak/Ibu/Saudara/i
+          Kepada Yth
         </p>
         <p className="guest-name" data-aos="fade-up" data-aos-delay="1100">
           {guestName}
